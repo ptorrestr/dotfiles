@@ -1,0 +1,4 @@
+[submodule "zsh_custom"]
+	path = zsh_custom
+	url = git@github.com:ptorrestr/zsh_custom.git
+	branch = master
