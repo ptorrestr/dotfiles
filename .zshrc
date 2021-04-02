@@ -1,5 +1,5 @@
 # ROOT path
-export ROOT="$HOME/root"
+export DOT="$HOME/dotfiles"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -64,7 +64,7 @@ ZSH_THEME="muse_2"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="$ROOT/src/zsh_custom"
+ZSH_CUSTOM="$DOT/zsh_custom"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
