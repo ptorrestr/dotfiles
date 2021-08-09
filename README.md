@@ -1,5 +1,23 @@
 # dotfiles
 
+## Qtile
+
+1. Install configuration for Qtile
+
+Install required dependencies:
+
+```bash
+yay -S alsa-utils pulseaudio python-psutil
+```
+
+2. Create symbolic link
+
+```bash
+mv $HOME/.config/qtile $HOME/.config/qtile.backup
+ln -s $HOME/dotfiles/qtile $HOME/.config/qtile
+```
+
+
 ## ZSH
 
 1. Install Oh-my-zsh

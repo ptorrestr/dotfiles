@@ -1,2 +1,5 @@
 #plugins nvim
 nvim/plugged
+
+# python compiled
+*.pyc
