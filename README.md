@@ -50,3 +50,15 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 ```
+
+## Alacritty
+
+1. Install alacritty
+```
+sudo pacman -Sy alacritty
+```
+
+2. Install config
+```
+ln -s $HOME/dotfiles/alacritty $HOME/.config/alacritty
+```
