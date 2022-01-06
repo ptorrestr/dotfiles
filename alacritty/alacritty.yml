@@ -28,14 +28,14 @@ colors:
 font:
   offset:
     y: 1
-#  bold:
-#    family: UbuntuMono Nerd Font
-#  italic:
-#    family: UbuntuMono Nerd Font
-#  normal:
-#    family: UbuntuMono Nerd Font
-#    style: Regular
-  size: 11
+  bold:
+    family: UbuntuMono Nerd Font
+  italic:
+    family: UbuntuMono Nerd Font
+  normal:
+    family: UbuntuMono Nerd Font
+    style: Regular
+  size: 12
 
 window:
   padding:

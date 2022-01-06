@@ -53,9 +53,10 @@ ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 
 ## Alacritty
 
-1. Install alacritty
+1. Install alacritty and dependencies
 ```
 sudo pacman -Sy alacritty
+yay -S nerd-fonts-complete
 ```
 
 2. Install config
