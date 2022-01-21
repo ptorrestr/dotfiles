@@ -74,11 +74,11 @@ primary_widgets = [
         no_update_string='0',
         display_format='{updates}',
         update_interval=1800,
-        custom_command='checkupdates',
+        custom_command='checkupdates', # needs package pacman-contrib
     ),
     powerline('color3', 'color4'),
     icon(bg="color3", text=' '),  # Icon: nf-fa-feed
-    widget.Net(**base(bg='color3'), interface='wlp1s0'),
+    widget.Net(**base(bg='color3')),
     powerline('color2', 'color3'),
     widget.CurrentLayoutIcon(**base(bg='color2'), scale=0.65),
     widget.CurrentLayout(**base(bg='color2'), padding=5),
