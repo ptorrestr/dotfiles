@@ -101,11 +101,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
-alias setclip="xclip -selection c"
-alias getclip="xclip -selection c -o"
-alias aws-dev="aws --profile=dev"
-alias aws-qa="aws --profile=qa"
-
-# Kubectl autocompletion
-[[ /usr/bin/kubectl ]] && source <(kubectl completion zsh)
-
