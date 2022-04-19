@@ -1,4 +1,4 @@
-background_opacity: 0.9
+window.opacity: 0.9
 
 colors:
   bright:
@@ -29,13 +29,18 @@ font:
   offset:
     y: 1
   bold:
-    family: UbuntuMono Nerd Font
+     #family: UbuntuMono Nerd Font
+    family: Source Code Pro
+    style: Bold
   italic:
-    family: UbuntuMono Nerd Font
+    #family: UbuntuMono Nerd Font
+    family: Source Code Pro
+    style: Bold Italic
   normal:
-    family: UbuntuMono Nerd Font
-    style: Regular
-  size: 14
+    #family: UbuntuMono Nerd Font
+    family: Source Code Pro
+    style: Regular 
+  size: 11
 
 window:
   padding:
