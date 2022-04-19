@@ -31,7 +31,12 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ln -s dotfiles/.zshrc $HOME/.zshrc
 ```
 
-3. Restart shell
+3. Clone submodules
+```
+git submodule update --init --recursive
+```
+
+4. Restart shell
 
 ## NVIM
 
