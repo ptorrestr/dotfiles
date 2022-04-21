@@ -56,6 +56,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 ```
 
+4. Install plugins
+```
+:PlugInstall
+```
+
 ## Alacritty
 
 1. Install alacritty and dependencies
