@@ -103,9 +103,11 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
-alias aws-dev="aws --profile=dev"
-alias aws-qa="aws --profile=qa"
+alias aws-ria="aws --profile=871070586944_RiaDataScience"
+alias aws-ria-dev="aws --profile=558853605774_AdministratorAccess"
+alias aws-xe="aws --profile=871070586944_XeDataScience"
 
 # Kubectl autocompletion
-[[ /usr/bin/kubectl ]] && source <(kubectl completion zsh)
+hash kubectl &> /dev/null && source <(kubectl completion zsh)
+hash helm &> /dev/null && source <(helm completion zsh)
 
