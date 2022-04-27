@@ -71,7 +71,7 @@ ZSH_CUSTOM="$DOT/zsh_custom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,4 +110,7 @@ alias aws-xe="aws --profile=871070586944_XeDataScience"
 # Kubectl autocompletion
 hash kubectl &> /dev/null && source <(kubectl completion zsh)
 hash helm &> /dev/null && source <(helm completion zsh)
+
+# pyenv autocompletion
+eval "$(pyenv init -)"
 
