@@ -40,6 +40,8 @@ git submodule update --init --recursive
 
 ## NVIM
 
+Make sure `pyenv` is installed and working.
+
 1. Install neovim
 ```
 sudo pacman -Sy neovim
@@ -56,7 +58,14 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
 ```
 
-4. Install plugins
+4. Create virtual enviroment for `neovim`
+```
+pyenv virtualenv 3.10.4 neovim3
+pyenv activate neovim3
+pip install neovim jedi flake8
+```
+
+5. Install plugins
 ```
 :PlugInstall
 ```
