@@ -26,9 +26,10 @@ ln -s $HOME/dotfiles/qtile $HOME/.config/qtile
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-2. Create symbolic link for configuration
+2. Create symbolic links for configuration
 ```
-ln -s dotfiles/.zshrc $HOME/.zshrc
+ln -s dotfiles/zsh/zshrc $HOME/.zshrc
+ln -s dotfiles/zsh/zshenv $HOME/.zshenv
 ```
 
 3. Clone submodules
