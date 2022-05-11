@@ -39,6 +39,38 @@ git submodule update --init --recursive
 
 4. Restart shell
 
+## Pyenv
+
+1. Install pyenv
+
+```
+sudo pacman -S pyenv
+```
+
+2. Install dependencies to build Pythons
+
+```
+sudo pacman -S --needed base-devel openssl zlib xz tk
+```
+
+3. Install virtualenv plugin
+
+```
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+```
+
+4. Build base Python
+
+```
+pyenv install 3.10.4
+```
+
+5. Make base global
+
+```
+pyenv global 3.10.4
+```
+
 ## NVIM
 
 Make sure `pyenv` is installed and working.
@@ -82,4 +114,17 @@ yay -S nerd-fonts-complete
 2. Install config
 ```
 ln -s $HOME/dotfiles/alacritty $HOME/.config/alacritty
+```
+
+## SDK
+
+1. Install dependencies
+```
+sudo pacman -S unzip
+```
+
+2. Install SDK
+
+```
+curl -s "https://get.sdkman.io" | bash
 ```

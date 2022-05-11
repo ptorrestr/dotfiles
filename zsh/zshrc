@@ -113,8 +113,8 @@ hash helm &> /dev/null && source <(helm completion zsh)
 
 # pyenv autocompletion
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# sdk
 export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" || echo "No SDKMAN found"
