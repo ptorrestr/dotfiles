@@ -1,0 +1,27 @@
+{
+    "editor.rulers": [88,120],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#ff4081"
+    },
+    "editor.largeFileOptimizations": false,
+    "latex-workshop.view.pdf.viewer": "external",
+    "extensions.autoUpdate": false,
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.linting.mypyEnabled": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.linux": "/home/pablo/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vscode-kubernetes.helm-path.linux": "/home/pablo/.vs-kubernetes/tools/helm/linux-amd64/helm"
+    },
+    "redhat.telemetry.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers"
+    ],
+    "editor.fontFamily": "UbuntuMono Nerd Font",
+    "editor.fontSize": 15,
+    "editor.fontWeight": "normal"
+}
