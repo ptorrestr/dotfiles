@@ -29,18 +29,18 @@ font:
     x: 0
     y: 0
   bold:
-    #family: UbuntuMono Nerd Font
-    family: Source Code Pro
+    family: UbuntuMono Nerd Font
+    #family: Source Code Pro
     style: Bold
   italic:
-    #family: UbuntuMono Nerd Font
-    family: Source Code Pro
+    family: UbuntuMono Nerd Font
+    #family: Source Code Pro
     style: Bold Italic
   normal:
-    #family: UbuntuMono Nerd Font
-    family: Source Code Pro
+    family: UbuntuMono Nerd Font
+    #family: Source Code Pro
     style: Regular 
-  size: 11
+  size: 12
 
 window:
   padding:
