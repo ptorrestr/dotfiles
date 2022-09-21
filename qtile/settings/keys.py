@@ -15,9 +15,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Switch between windows in current stack pane
     ([mod], "j", lazy.layout.down()),
-    ([mod], "k", lazy.layout.up()),
+    ([mod], "u", lazy.layout.up()),
     ([mod], "h", lazy.layout.left()),
-    ([mod], "l", lazy.layout.right()),
+    ([mod], "k", lazy.layout.right()),
 
     # Change window sizes (MonadTall)
     ([mod, "shift"], "l", lazy.layout.grow()),
@@ -74,6 +74,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Screenshot
     ([mod], "s", lazy.spawn("scrot")),
     ([mod, "shift"], "s", lazy.spawn("scrot -s")),
+
+    # keyboard
+    ([mod], "i", lazy.widget["keyboardlayout"].next_keyboard()),
 
     # ------------ Hardware Configs ------------
 

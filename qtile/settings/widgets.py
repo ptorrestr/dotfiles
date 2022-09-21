@@ -85,9 +85,10 @@ primary_widgets = [
     powerline('color1', 'color2'),
     icon(bg="color1", fontsize=17, text=' '), # Icon: nf-mdi-calendar_clock
     widget.Clock(**base(bg='color1'), format='%d/%m/%Y - %H:%M '),
-    widget.Battery(**base(bg='color1'), update_interval=1),
+    #widget.Battery(**base(bg='color1'), update_interval=1),
     powerline('dark', 'color1'),
     widget.Systray(background=colors['dark'], padding=5),
+    widget.KeyboardLayout(configured_keyboards=['latam', 'us']),
 ]
 
 secondary_widgets = [
