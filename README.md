@@ -91,6 +91,22 @@ ln -s $HOME/dotfiles/neovim/custom $HOME/.config/nvim/lua/custom
 :MasonInstallAll
 ```
 
+## TMux
+
+1. Install TMux
+```
+sudo pacman -S tmux
+```
+
+2. Install Tmux plugin manager (tpm)
+```
+git clone https://github.com/tmux-plugins/tpm.git $HOME/.tmux/plugins/tpm
+```
+
+3. Symlink the configuration
+```
+ln -s $HOME/dotfiles/tmux $HOME/.config/tmux
+```
 
 ## Alacritty
 
