@@ -80,27 +80,32 @@ Make sure `pyenv` is installed and working.
 sudo pacman -Sy neovim
 ```
 
-2. Install Vim-Plug
+2. Configure neovim
 ```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ln -s $HOME/dotfiles/neovim/custom $HOME/.config/nvim/lua/custom 
+
 ```
 
-3. Create symbolic link for configuration
+3. Install neovim plugins
 ```
-ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
-```
-
-4. Create virtual enviroment for `neovim`
-```
-pyenv virtualenv 3.10.4 neovim3
-pyenv activate neovim3
-pip install neovim jedi flake8
+:MasonInstallAll
 ```
 
-5. Install plugins
+## TMux
+
+1. Install TMux
 ```
-:PlugInstall
+sudo pacman -S tmux
+```
+
+2. Install Tmux plugin manager (tpm)
+```
+git clone https://github.com/tmux-plugins/tpm.git $HOME/.tmux/plugins/tpm
+```
+
+3. Symlink the configuration
+```
+ln -s $HOME/dotfiles/tmux $HOME/.config/tmux
 ```
 
 ## Alacritty
