@@ -133,3 +133,16 @@ sudo pacman -S unzip
 ```
 curl -s "https://get.sdkman.io" | bash
 ```
+
+## Ranger
+
+1. Install Ranger
+
+```
+sudo pacman -S ranger
+```
+
+2. Install configuration files
+```
+ln -s $HOME/dotfiles/ranger $HOME/.config/
+```
