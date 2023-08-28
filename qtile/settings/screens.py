@@ -15,7 +15,12 @@ def status_bar(widgets):
     return bar.Bar(widgets, 24, opacity=0.92)
 
 
-screens = [Screen(top=status_bar(primary_widgets))]
+screens = [
+    Screen(
+        wallpaper="~/Downloads/2752980.jpg",
+        top=status_bar(primary_widgets),
+    )
+]
 
 xrandr = "xrandr | grep -w 'connected' | cut -d ' ' -f 2 | wc -l"
 

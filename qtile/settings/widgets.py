@@ -19,14 +19,14 @@ def icon(fg="text", bg="dark", fontsize=16, text="?"):
 
 def powerline(fg="light", bg="dark"):
     return widget.TextBox(
-        **base(fg, bg), text="", fontsize=37, padding=-3  # Icon: nf-oct-triangle_left
+        **base(fg, bg), text="", fontsize=50, padding=-3  # Icon: nf-cod-triangle_left
     )
 
 
 def pacman_updates(bg="color5") -> List:
     return [
         powerline(bg, "dark"),
-        icon(bg=bg, text="󰚰"),  # Icon: nf-fa-download
+        icon(bg=bg, text="󰚰 "),  # Icon: nf-fa-download
         widget.CheckUpdates(
             background=colors[bg],
             colour_have_updates=colors["text"],
@@ -59,7 +59,7 @@ def layout(bg="color3", prev_bg="color4") -> List:
 def clock(bg="color2", prev_bg="color3") -> List:
     return [
         powerline(bg, prev_bg),
-        icon(bg=bg, fontsize=17, text=" "),  # Icon: nf-mdi-calendar_clock
+        icon(bg=bg, fontsize=17, text=" "),  # Icon: nf-oct-calendar
         widget.Clock(**base(bg=bg), format="%d/%m/%Y - %H:%M "),
     ]
 
