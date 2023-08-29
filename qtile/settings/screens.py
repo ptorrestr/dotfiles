@@ -17,7 +17,7 @@ def status_bar(widgets):
 
 screens = [
     Screen(
-        wallpaper="static/valley2560x1080.jpg",
+        wallpaper="~/dotfiles/static/valley2560x1080.jpg",
         top=status_bar(primary_widgets),
     )
 ]
