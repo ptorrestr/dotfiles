@@ -7,4 +7,5 @@
 cbatticon -u 5 &
 # systray volume
 volumeicon &
-
+# avfs
+mountavfs
