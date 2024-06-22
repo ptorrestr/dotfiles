@@ -5,7 +5,6 @@
 # Theming for Qtile
 
 from os import path
-import subprocess
 import json
 
 from .path import qtile_path
