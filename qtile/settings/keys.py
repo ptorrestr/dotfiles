@@ -53,8 +53,8 @@ keys = [
         # Terminal
         ([mod], "Return", lazy.spawn("alacritty")),
         # Redshift
-        ([mod], "r", lazy.spawn("redshift -O 2400")),
-        ([mod, "shift"], "r", lazy.spawn("redshift -x")),
+        #([mod], "r", lazy.spawn("redshift -O 2400")),
+        #([mod, "shift"], "r", lazy.spawn("redshift -x")),
         # Screenshot
         ([mod], "s", lazy.spawn("scrot")),
         ([mod, "shift"], "s", lazy.spawn("scrot -s")),
