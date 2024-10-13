@@ -2,7 +2,9 @@
 # https://youtube.com/c/antoniosarosi
 # https://github.com/antoniosarosi/dotfiles
 
-from libqtile import layout
+from libqtile.layout.floating import Floating
+from libqtile.layout.xmonad import MonadTall
+from libqtile.layout.max import Max
 from libqtile.config import Match
 from .theme import colors
 
@@ -17,8 +19,8 @@ layout_conf = {
 }
 
 layouts = [
-    layout.MonadTall(**layout_conf),
-    layout.Max(),
+    MonadTall(**layout_conf),
+    Max(),
     # layout.MonadWide(**layout_conf),
     # layout.Bsp(**layout_conf),
     # layout.Matrix(columns=2, **layout_conf),
@@ -30,15 +32,23 @@ layouts = [
     # layout.Zoomy(),
 ]
 
-floating_layout = layout.Floating(
+floating_layout = Floating(
     float_rules=[
-        *layout.Floating.default_float_rules,
-        Match(wm_class="confirmreset"),
-        Match(wm_class="makebranch"),
-        Match(wm_class="maketag"),
-        Match(wm_class="ssh-askpass"),
-        Match(title="branchdialog"),
-        Match(title="pinentry"),
+        *Floating.default_float_rules,
+        Match(wm_class="confirmreset"),  # gitk
+        Match(wm_class="makebranch"),    # gitk
+        Match(wm_class="maketag"),       # gitk
+        Match(wm_class="ssh-askpass"),   # ssh-askpass
+        Match(title="branchdialog"),     # gitk
+        Match(title="pinentry"),         # GPG entry
+        Match(wm_class='confirm'),
+        Match(wm_class='dialog'),
+        Match(wm_class='download'),
+        Match(wm_class='error'),
+        Match(wm_class='file_progress'),
+        Match(wm_class='notification'),
+        Match(wm_class='splash'),
+        Match(wm_class='toolbar'),
     ],
     border_focus=colors["color4"][0],
 )
